@@ -8,6 +8,22 @@
 <ion-content>
 
   <fieldset>
+
+    <ion-list lines="full" class="ion-no-margin">
+      <ion-list-header lines="full">
+        <ion-label> Anotaciones el alumno </ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label> Nombre y apellidos:</ion-label>
+        <ion-input placeholder="Ingresa aqui"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Número de clase:</ion-label>
+        <ion-input placeholder="Ingresa aqui"></ion-input>
+      </ion-item>
+    </ion-list>
+
+<!--
     <h1>Anotaciones el alumno</h1>
     <label>
         Nombre y apellidos
@@ -18,20 +34,39 @@
         Número de clase
         <input type="number" name="numero">
     </label>
-
+-->
 <center>
+
+  <ion-item>
+    <ion-label>Anotacion</ion-label>
+    <ion-select value="03">
+      <ion-select-option value="01">Positiva</ion-select-option>
+      <ion-select-option value="02">Negativa</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <!-- 
+  <select name="anotacion?">
+    <option value="0">Positiva</option>
+    <option value="1">negativa</option>
+  </select>
+
   <ion-item>
     <ion-label>anotacion?</ion-label>
     <ion-select interface="popover">
       <ion-select-option value="Positiva">Positiva</ion-select-option>
       <ion-select-option value="Negativa">Negativa</ion-select-option>
   </ion-item>
+-->
 </center>
 
-<label>
-  Anotaciones:
-  <textarea name="anotaciones"></textarea>
-</label>
+
+<ion-item>
+  <ion-label position="stacked">Ingresa el texto:</ion-label>
+  <ion-textarea placeholder="Ingresa aqui"></ion-textarea>
+</ion-item>
+
+
+
 </fieldset>
 <section>
   <ion-button expand="block">Aceptar</ion-button>
